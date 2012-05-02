@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="mfcwnd"
-	ProjectGUID="{9A4EEC89-D344-418A-A790-93CA83A9AEDF}"
-	RootNamespace="mfcwnd"
+	Name="mfcformvw"
+	ProjectGUID="{8C2234A7-EA53-44E8-9F09-78AD14A81C59}"
+	RootNamespace="mfcformvw"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="0"
 	>
@@ -58,6 +58,7 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="..\..\source\uidemo\mfcformvw"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -135,6 +136,7 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="..\..\source\uidemo\mfcformvw"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -210,6 +212,7 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="..\..\source\uidemo\mfcformvw"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -290,6 +293,7 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="..\..\source\uidemo\mfcformvw"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -342,11 +346,11 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath="..\..\source\uidemo\mfcwnd\mfcwnd.cpp"
+				RelativePath="..\..\source\uidemo\mfcformvw\mfcformvw.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\source\uidemo\mfcwnd\module.cpp"
+				RelativePath="..\..\source\uidemo\mfcformvw\module.cpp"
 				>
 			</File>
 		</Filter>
@@ -356,7 +360,15 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath="..\..\source\uidemo\mfcwnd\mfcwnd.h"
+				RelativePath="..\..\source\uidemo\mfcformvw\mfcformvw.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\source\uidemo\mfcformvw\resource.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\source\uidemo\mfcformvw\stdafx.h"
 				>
 			</File>
 		</Filter>
@@ -366,7 +378,21 @@
 			UniqueIdentifier="{517625E8-3653-47B2-8F30-C4B355E1120B}"
 			>
 		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+			<File
+				RelativePath="..\..\source\uidemo\mfcformvw\mfcformvw.rc"
+				>
+			</File>
+		</Filter>
 	</Files>
 	<Globals>
+		<Global
+			Name="RESOURCE_FILE"
+			Value="mfcformvw.rc"
+		/>
 	</Globals>
 </VisualStudioProject>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DockingPaneLayouts CompactMode="1">
+	<NormalLayout>
+		<Summary Panes="10" TopContainer="4" Client="9"/>
+		<Pane-1 Type="0" DockingCX="100" DockingCY="100" Title="FormView\n\n" ID="101" DockingHolder="7" LastHolder="7"/>
+		<Pane-2 Type="0" DockingCX="100" DockingCY="100" Title="DialogView\n\n" ID="103" DockingHolder="8" LastHolder="8"/>
+		<Pane-3 Type="0" DockingCX="100" DockingCY="100" Title="InfoBar\n\n" ID="102" DockingHolder="10" LastHolder="10"/>
+		<Pane-4 Type="2" DockingCY="314" Panes="2" Pane-1="5" Pane-2="10"/>
+		<Pane-5 Type="2" DockingCY="111" Horiz="1" Panes="2" Pane-1="6" Pane-2="9"/>
+		<Pane-6 Type="2" DockingCX="130" DockingCY="210" Panes="2" Pane-1="7" Pane-2="8"/>
+		<Pane-7 Type="1" DockingCX="100" DockingCY="107" Panes="1" Selected="1" Pane-1="1"/>
+		<Pane-8 Type="1" DockingCX="100" DockingCY="99" Panes="1" Selected="2" Pane-1="2"/>
+		<Pane-9 Type="4" DockingCX="521"/>
+		<Pane-10 Type="1" DockingCX="100" DockingCY="85" Panes="1" Selected="3" Pane-1="3"/>
+	</NormalLayout>
+</DockingPaneLayouts>

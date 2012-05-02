@@ -2,11 +2,11 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="mfcwnd"
-	ProjectGUID="{9A4EEC89-D344-418A-A790-93CA83A9AEDF}"
-	RootNamespace="mfcwnd"
+	Name="configxml"
+	ProjectGUID="{4FC1867D-DA2A-40A1-B2AB-CCD1C099C96C}"
+	RootNamespace="configxml"
 	Keyword="Win32Proj"
-	TargetFrameworkVersion="0"
+	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
 		<Platform
@@ -24,7 +24,6 @@
 			OutputDirectory="..\..\build\$(ConfigurationName)\plugins"
 			IntermediateDirectory="..\..\build\$(ConfigurationName)\obj\$(ProjectName)"
 			ConfigurationType="2"
-			UseOfMFC="2"
 			CharacterSet="1"
 			>
 			<Tool
@@ -45,8 +44,8 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\source\public;..\..\interface\core;..\..\interface\appui\uicore"
-				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_AFXEXT"
+				AdditionalIncludeDirectories="..\..\interface\core"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -66,7 +65,6 @@
 				Name="VCLinkerTool"
 				OutputFile="$(OutDir)\$(ProjectName).pln"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories=""
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(IntDir)\$(ProjectName).pdb"
@@ -101,7 +99,6 @@
 			OutputDirectory="..\..\build\$(ConfigurationName)64\plugins"
 			IntermediateDirectory="..\..\build\$(ConfigurationName)64\obj\$(ProjectName)"
 			ConfigurationType="2"
-			UseOfMFC="2"
 			CharacterSet="1"
 			>
 			<Tool
@@ -123,8 +120,9 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\source\public;..\..\interface\core;..\..\interface\appui\uicore"
-				PreprocessorDefinitions="_WIN64;_DEBUG;_WINDOWS;_AFXEXT"
+				AdditionalIncludeDirectories="..\..\interface\core"
+				PreprocessorDefinitions="_WIN64;_DEBUG;_WINDOWS;_USRDLL"
+				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
 				WarningLevel="4"
@@ -143,7 +141,6 @@
 				Name="VCLinkerTool"
 				OutputFile="$(OutDir)\$(ProjectName).pln"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories=""
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(IntDir)\$(ProjectName).pdb"
@@ -178,7 +175,6 @@
 			OutputDirectory="..\..\build\$(ConfigurationName)\plugins"
 			IntermediateDirectory="..\..\build\$(ConfigurationName)\obj\$(ProjectName)"
 			ConfigurationType="2"
-			UseOfMFC="2"
 			CharacterSet="1"
 			WholeProgramOptimization="1"
 			>
@@ -199,8 +195,8 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="..\..\source\public;..\..\interface\core;..\..\interface\appui\uicore"
-				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_AFXEXT"
+				AdditionalIncludeDirectories="..\..\interface\core"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL"
 				RuntimeLibrary="2"
 				WarningLevel="4"
 				DebugInformationFormat="3"
@@ -218,7 +214,6 @@
 				Name="VCLinkerTool"
 				OutputFile="$(OutDir)\$(ProjectName).pln"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories=""
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(IntDir)\$(ProjectName).pdb"
@@ -257,7 +252,6 @@
 			OutputDirectory="..\..\build\$(ConfigurationName)64\plugins"
 			IntermediateDirectory="..\..\build\$(ConfigurationName)64\obj\$(ProjectName)"
 			ConfigurationType="2"
-			UseOfMFC="2"
 			CharacterSet="1"
 			WholeProgramOptimization="1"
 			>
@@ -279,8 +273,8 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="..\..\source\public;..\..\interface\core;..\..\interface\appui\uicore"
-				PreprocessorDefinitions="_WIN64;NDEBUG;_WINDOWS;_AFXEXT"
+				AdditionalIncludeDirectories="..\..\interface\core"
+				PreprocessorDefinitions="_WIN64;NDEBUG;_WINDOWS;_USRDLL"
 				RuntimeLibrary="2"
 				WarningLevel="4"
 				DebugInformationFormat="3"
@@ -298,7 +292,6 @@
 				Name="VCLinkerTool"
 				OutputFile="$(OutDir)\$(ProjectName).pln"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories=""
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(IntDir)\$(ProjectName).pdb"
@@ -342,11 +335,15 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath="..\..\source\uidemo\mfcwnd\mfcwnd.cpp"
+				RelativePath="..\..\source\core\configxml\Cx_ConfigXml.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\source\uidemo\mfcwnd\module.cpp"
+				RelativePath="..\..\source\core\configxml\Cx_XmlSection.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\source\core\configxml\Module.cpp"
 				>
 			</File>
 		</Filter>
@@ -356,15 +353,49 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath="..\..\source\uidemo\mfcwnd\mfcwnd.h"
+				RelativePath="..\..\source\core\configxml\ConfigXmlImpl.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\source\core\configxml\Cx_ConfigXml.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\source\core\configxml\Cx_XmlSection.h"
 				>
 			</File>
 		</Filter>
 		<Filter
-			Name="Interface Files"
-			Filter="i"
-			UniqueIdentifier="{517625E8-3653-47B2-8F30-C4B355E1120B}"
+			Name="Interface"
 			>
+			<File
+				RelativePath="..\..\interface\core\xml\ConfigSection.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\interface\core\xml\IConfigData.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\interface\core\xml\IConfigSection.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\interface\core\xml\IConfigSectionXml.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\interface\core\xml\IConfigTransaction.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\interface\core\xml\IConfigXml.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\interface\core\xml\IFileCryptHandler.h"
+				>
+			</File>
 		</Filter>
 	</Files>
 	<Globals>

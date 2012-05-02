@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root designMode="false">
+	<DockingPanes>
+		<Pane id="101" clsid="b78f80a2-a436-4a7f-8b67-e45e6d43f851"
+		      direction="left" caption="LeftBar"
+		      canClose="false" canHide="false" hasCaption="false" hasButton="false"/>
+		<Pane id="102" clsid="b1c90555-1489-4021-a5cb-11d07b2612e3"
+		      direction="right" caption="RightBar"
+		      canClose="false" canHide="false" hasCaption="false" hasButton="false"/>
+	</DockingPanes>
+</root>

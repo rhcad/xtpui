@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="mfcwnd"
-	ProjectGUID="{9A4EEC89-D344-418A-A790-93CA83A9AEDF}"
-	RootNamespace="mfcwnd"
+	Name="cmdhander1"
+	ProjectGUID="{311D54A1-578B-4867-B171-A7F3C0E1A446}"
+	RootNamespace="cmdhander1"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="0"
 	>
@@ -342,11 +342,11 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath="..\..\source\uidemo\mfcwnd\mfcwnd.cpp"
+				RelativePath="..\..\source\uidemo\cmdhander1\cmdhander1.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\source\uidemo\mfcwnd\module.cpp"
+				RelativePath="..\..\source\uidemo\cmdhander1\module.cpp"
 				>
 			</File>
 		</Filter>
@@ -356,7 +356,7 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath="..\..\source\uidemo\mfcwnd\mfcwnd.h"
+				RelativePath="..\..\source\uidemo\cmdhander1\cmdhander1.h"
 				>
 			</File>
 		</Filter>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DockingPaneLayouts CompactMode="1">
+	<NormalLayout>
+		<Summary Panes="9" TopContainer="3" Client="8"/>
+		<Pane-1 Type="0" DockingCX="100" DockingCY="100" Title="LeftBar\n\n" ID="101" DockingHolder="5" LastHolder="5"/>
+		<Pane-2 Type="0" DockingCX="100" DockingCY="100" Title="RightBar\n\n" ID="102" DockingHolder="9" LastHolder="9"/>
+		<Pane-3 Type="2" DockingCY="917" Panes="1" Pane-1="4"/>
+		<Pane-4 Type="2" DockingCY="266" Horiz="1" Panes="2" Pane-1="5" Pane-2="6"/>
+		<Pane-5 Type="1" DockingCX="228" DockingCY="100" Panes="1" Selected="1" Pane-1="1"/>
+		<Pane-6 Type="2" DockingCX="716" Panes="1" Pane-1="7"/>
+		<Pane-7 Type="2" DockingCX="716" Horiz="1" Panes="2" Pane-1="8" Pane-2="9"/>
+		<Pane-8 Type="4" DockingCX="455"/>
+		<Pane-9 Type="1" DockingCX="257" DockingCY="78" Panes="1" Selected="2" Pane-1="2"/>
+	</NormalLayout>
+</DockingPaneLayouts>

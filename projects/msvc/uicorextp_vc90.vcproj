@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="mfcwnd"
-	ProjectGUID="{9A4EEC89-D344-418A-A790-93CA83A9AEDF}"
-	RootNamespace="mfcwnd"
+	Name="uicorextp"
+	ProjectGUID="{2E66F16C-26B8-43F1-B731-14FA23D3E112}"
+	RootNamespace="uicorextp"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="0"
 	>
@@ -45,11 +45,12 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\source\public;..\..\interface\core;..\..\interface\appui\uicore"
+				AdditionalIncludeDirectories="..\..\source\public;..\..\interface\core;..\..\interface\appui\uicore;..\..\interface\appui\uicore\mfc"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_AFXEXT"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
+				UsePrecompiledHeader="2"
 				WarningLevel="4"
 				DebugInformationFormat="4"
 			/>
@@ -123,10 +124,11 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\source\public;..\..\interface\core;..\..\interface\appui\uicore"
+				AdditionalIncludeDirectories="..\..\source\public;..\..\interface\core;..\..\interface\appui\uicore;..\..\interface\appui\uicore\mfc"
 				PreprocessorDefinitions="_WIN64;_DEBUG;_WINDOWS;_AFXEXT"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
+				UsePrecompiledHeader="2"
 				WarningLevel="4"
 				DebugInformationFormat="3"
 			/>
@@ -199,9 +201,10 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="..\..\source\public;..\..\interface\core;..\..\interface\appui\uicore"
+				AdditionalIncludeDirectories="..\..\source\public;..\..\interface\core;..\..\interface\appui\uicore;..\..\interface\appui\uicore\mfc"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_AFXEXT"
 				RuntimeLibrary="2"
+				UsePrecompiledHeader="2"
 				WarningLevel="4"
 				DebugInformationFormat="3"
 			/>
@@ -279,9 +282,10 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="..\..\source\public;..\..\interface\core;..\..\interface\appui\uicore"
+				AdditionalIncludeDirectories="..\..\source\public;..\..\interface\core;..\..\interface\appui\uicore;..\..\interface\appui\uicore\mfc"
 				PreprocessorDefinitions="_WIN64;NDEBUG;_WINDOWS;_AFXEXT"
 				RuntimeLibrary="2"
+				UsePrecompiledHeader="2"
 				WarningLevel="4"
 				DebugInformationFormat="3"
 			/>
@@ -342,13 +346,97 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath="..\..\source\uidemo\mfcwnd\mfcwnd.cpp"
+				RelativePath="..\..\source\appui\uicorextp\ChildFrm.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\source\uidemo\mfcwnd\module.cpp"
+				RelativePath="..\..\source\appui\uicorextp\DummyDoc.cpp"
 				>
 			</File>
+			<File
+				RelativePath="..\..\source\appui\uicorextp\module.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\source\appui\uicorextp\sinstance.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\source\appui\uicorextp\stdafx.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\source\appui\uicorextp\UIOptions.cpp"
+				>
+			</File>
+			<Filter
+				Name="FrameWnd"
+				>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\FrmWndFactory.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\MainFrm.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\MDIFrameWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\SDIFrameWnd.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="ViewPanel"
+				>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\EmbedView.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\EmbedWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\PaneManager.cpp"
+					>
+				</File>
+			</Filter>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -356,15 +444,119 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath="..\..\source\uidemo\mfcwnd\mfcwnd.h"
+				RelativePath="..\..\source\appui\uicorextp\ChildFrm.h"
 				>
 			</File>
+			<File
+				RelativePath="..\..\source\appui\uicorextp\DummyDoc.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\source\appui\uicorextp\sinstance.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\source\appui\uicorextp\stdafx.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\source\appui\uicorextp\UIOptions.h"
+				>
+			</File>
+			<Filter
+				Name="FrameWnd"
+				>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\FrmWndFactory.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\MainFrm.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\MDIFrameWnd.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\SDIFrameWnd.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="ViewPanel"
+				>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\EmbedView.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\EmbedWnd.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\PaneManager.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\source\appui\uicorextp\ViewItem.h"
+					>
+				</File>
+			</Filter>
 		</Filter>
 		<Filter
 			Name="Interface Files"
 			Filter="i"
 			UniqueIdentifier="{517625E8-3653-47B2-8F30-C4B355E1120B}"
 			>
+			<File
+				RelativePath="..\..\interface\appui\uicore\IUIOptions.h"
+				>
+			</File>
+			<Filter
+				Name="App"
+				>
+				<File
+					RelativePath="..\..\interface\appui\uicore\mfc\FrameApp.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\interface\appui\uicore\mfc\FrameAppImpl.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\interface\appui\uicore\IFrmWndFactory.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Message"
+				>
+				<File
+					RelativePath="..\..\interface\appui\uicore\CmdMsgEvent.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\interface\appui\uicore\CmdMsgObserver.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\interface\appui\uicore\mfc\FireCmdMsg.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Window"
+				>
+				<File
+					RelativePath="..\..\interface\appui\uicore\IWndFactory.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\interface\appui\uicore\mfc\WndFactory.h"
+					>
+				</File>
+			</Filter>
 		</Filter>
 	</Files>
 	<Globals>

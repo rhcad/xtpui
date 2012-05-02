@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root appname="appxtp" xcbfile="cmdbars.xcb" mdi="true"
+      optionsFile="uioptions.xml" cmdbarsFile="cmdbars.xml">
+    <mainframe id="128 IDR_MAINFRAME" layout="MainFrame">
+        <statusbar>
+            <indicators>
+                <item id="0xE701 ID_INDICATOR_CAPS"/>
+                <item id="0xE702 ID_INDICATOR_NUM"/>
+            </indicators>
+        </statusbar>
+    </mainframe>
+    <views>
+        <view id="129 IDR_DOC_TYPE" layout="View1" caption="View1"
+              clsid="aca6d325-c599-4463-b348-592035c7f619"/>
+        <view id="129 IDR_DOC_TYPE" layout="View2" caption="ViewB"
+              clsid="56f4880e-5658-4354-952a-3b01b8e6b485"/>
+    </views>
+</root>

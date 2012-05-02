@@ -9,6 +9,7 @@ build
 *.obj
 *.d
 *.res
+*.aps
 *~
 *.DS_Store
 ._*

@@ -1,0 +1,28 @@
+= 安装运行说明 =
+
+== 开发所需软件 ==
+
+* Microsoft Visual Studio 2008 的VC++组件，可不安装SP1\\
+  如需使用 VC++ 2005，则使用 tools/cpvc9to8.py 得到相应工程文件
+
+* Xtreme ToolkitPro v15 或 v13 （简称XTP），勾选编译Unicode动态库\\
+  XTP 用于编译 uicorextp 插件，主程序及其他插件不需要 XTP。\\
+  安装目录下的 Utils/CommandBarsDesigner.exe 用于编辑程序资源文件(*.xcb)，该程序文件可以单独复制出来使用
+
+== 调试运行所需文件 ==
+
+* 将 XTP 的 Bin 目录下的 ToolkitPro1*vc90U.dll 或 ToolkitPro1*vc90UD.dll 复制到程序编译出的build相应目录的 plugins 目录下（与uicorextp.pln同目录），或者将 ToolkitPro1*vc90U.dll 所在目录加到 PATH 环境变量中，就不需要复制DLL了。
+
+* 将 XTP 的 Source\Styles 目录下的 Office2010.dll 或 Office2007.dll 复制到程序编译出的build下的translations目录中（translations目录与plugins目录同级）。
+
+* 如需XTP中文资源，可把 XTP 的 Utils\Translations 下的 ToolkitPro.ResourceZhCn.xml 复制到程序编译出的build下的translations\chs 目录中，并改名为 ToolkitPro.Resource.xml 。
+
+== 用户运行所需软件 ==
+
+* MSXML4\\
+在部分低版本操作系统上会提示需要安装MSXML4，Vista/Win7/Win2008不需要安装。\\
+http://www.microsoft.com/downloads/zh-cn/details.aspx?FamilyID=7F6C0CB4-7A5E-4790-A7CF-9E139E6819C0
+
+* VC90运行库\\
+在没有安装VC2008开发环境的计算机上，需要安装VC90运行库:\\
+http://www.microsoft.com/downloads/zh-cn/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF&displaylang=zh-cn
